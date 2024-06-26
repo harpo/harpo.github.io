@@ -4,7 +4,7 @@ const init_phones = ["Bad Guy 2022","IEF Comp"],             // Optional. Which 
       default_channels = ["R"],                     // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "Hz",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
       default_norm_db = 60,                         // Sets default dB normalization point
-      default_norm_hz = 1000,                       // Sets default Hz normalization point (500Hz is recommended by IEC)
+      default_norm_hz = 432,                       // Sets default Hz normalization point (500Hz is recommended by IEC)
       max_channel_imbalance = 5,                    // Channel imbalance threshold to show ! in the channel selector
       alt_layout = true,                            // Toggle between classic and alt layouts
       alt_sticky_graph = true,                      // If active graphs overflows the viewport, does the graph scroll with the page or stick to the viewport?
@@ -20,7 +20,7 @@ const init_phones = ["Bad Guy 2022","IEF Comp"],             // Optional. Which 
       page_title = "HarpoGraph",                     // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for earphones",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
-      externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
+      externalLinksBar = false,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
       restricted = false,                           // Enables restricted mode. More restricted options below
       expandable = false,                           // Enables button to expand iframe over the top of the parent page
       expandableOnly = false,                       // Prevents iframe interactions unless the user has expanded it. Accepts "true" or "false" OR a pixel value; if pixel value, that is used as the maximum width at which expandableOnly is used
@@ -55,12 +55,12 @@ const targets = [
 // Set up the watermark, based on config options above
 function watermark(svg) {
     let wm = svg.append("g")
-        //.attr("transform", "translate("+(pad.l+W/2)+","+(pad.t+H/2-20)+")")
-        .attr("opacity",1.0);
+        .attr("transform", "translate("+(pad.l+W/2)+","+(pad.t+H/2-20)+")")
+        .attr("opacity",0.2);
     
     if ( watermark_image_url ) {
         wm.append("image")
-            .attrs({x:0, y:0, width:800, height:350, "xlink:href":watermark_image_url});
+            .attrs({x:-64, y:-64, width:128, height:128, "xlink:href":watermark_image_url});
     }
     
     if ( watermark_text ) {
@@ -149,16 +149,6 @@ const
                 <a href="https://www.youtube.com/@harpokrates"><img width="200" src="img/youtube.png"/></a>
             </div>
 
-//            <div class="widget">
-//                <a href="https://docs.google.com/spreadsheets/d/1TH9_bqUq1vANsFiXVbVZ6w8kVA9C3DkknnMGyIcKE7M/edit#gid=0"><img width="200" src="img/top10.png"/></a>
-//            </div>
-//
-//            <div class="widget">
-//                <a href="https://twitter.com/HawaiibadboyB"><img width="200" src="img/twitter.png"/></a>
-//            </div>
-//        </div>
-//
-//        <p class="center">(More coming soon.)</p>
     `,
     // Which of the above variables to actually insert into the page
     whichAccessoriesToUse = widgets;
