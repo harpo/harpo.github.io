@@ -1,56 +1,56 @@
 /* Primary color theme */
 :root {
-    --accent-color: hsl(29, 80%, 55%);
-    --accent-color-contrast: hsl(32, 85%, 90%);
+    --accent-color: hsl(210, 100%, 60%);
+    --accent-color-contrast: hsl(210, 100%, 80%);
 
-    --background-color: hsl(223, 25%, 10%);
-    --background-color-contrast: hsl(223, 25%, 10%);
-    --background-color-contrast-more: hsl(0, 0%, 29%);
-    --background-color-graph: hsl(234, 14%, 7%);
+    --background-color: hsl(220, 15%, 15%);
+    --background-color-contrast: hsl(220, 15%, 20%);
+    --background-color-contrast-more: hsl(220, 15%, 25%);
+    --background-color-graph: hsl(220, 15%, 18%);
 
-    --background-color-inputs: hsl(234, 14%, 7%);
+    --background-color-inputs: hsl(220, 15%, 22%);
 
-    --font-color-primary: hsl(32, 85%, 90%);
-    --font-color-secondary: hsl(0, 0%, 0%);
-    --font-color-inputs: hsl(0, 0%, 100%);
+    --font-color-primary: hsl(0, 0%, 95%);
+    --font-color-secondary: hsl(0, 0%, 80%);
+    --font-color-inputs: hsl(0, 0%, 95%);
 
-    --font-primary: 'Open Sans', sans-serif;
-    --font-secondary: monospace;
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Fira Code', monospace;
 
-    --scrollbar-color: 0,0,0;
-    --scrollbar-accent: 255,255,255;
+    --scrollbar-color: 40,44,52;
+    --scrollbar-accent: 80,85,95;
 
-    --header-color: hsl(223, 25%, 10%);
-    --header-links-color: hsl(45, 85%, 60%);
-    --header-menu-icon-color: hsl(0, 0%, 100%);
+    --header-color: hsl(220, 15%, 18%);
+    --header-links-color: hsl(210, 100%, 70%);
+    --header-menu-icon-color: hsl(0, 0%, 95%);
     
-    --logo-filter: none;
-    --svg-filter: invert(0);
+    --logo-filter: brightness(0.9) contrast(1.1);
+    --svg-filter: invert(1);
 }
 
 body.dark-mode {
-    --accent-color: hsl(46, 100%, 50%);
-    --accent-color-contrast: hsl(46, 100%, 70%);
+    --accent-color: hsl(210, 100%, 60%);
+    --accent-color-contrast: hsl(210, 100%, 80%);
 
-    --background-color: hsl(0, 0%, 13%);
-    --background-color-contrast: hsl(0, 0%, 18%);
-    --background-color-contrast-more: hsl(0, 0%, 25%);
-    --background-color-graph: hsl(0, 0%, 15%);
+    --background-color: hsl(220, 15%, 15%);
+    --background-color-contrast: hsl(220, 15%, 20%);
+    --background-color-contrast-more: hsl(220, 15%, 25%);
+    --background-color-graph: hsl(220, 15%, 18%);
     
-    --background-color-inputs: hsl(0, 0%, 20%);
+    --background-color-inputs: hsl(220, 15%, 22%);
     
     --font-color-primary: hsl(0, 0%, 95%);
     --font-color-secondary: hsl(0, 0%, 80%);
     --font-color-inputs: hsl(0, 0%, 95%);
     
-    --font-primary: 'Open Sans', sans-serif;
-    --font-secondary: monospace;
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Fira Code', monospace;
     
-    --scrollbar-color: 40,40,40;
-    --scrollbar-accent: 80,80,80;
+    --scrollbar-color: 40,44,52;
+    --scrollbar-accent: 80,85,95;
         
-    --header-color: hsl(0, 0%, 13%);
-    --header-links-color: hsl(180, 100%, 50%);
+    --header-color: hsl(220, 15%, 18%);
+    --header-links-color: hsl(210, 100%, 70%);
     --header-menu-icon-color: hsl(0, 0%, 95%);
     
     --logo-filter: brightness(0.9) contrast(1.1);
