@@ -29,30 +29,30 @@
 }
 
 body.dark-mode {
-    --accent-color: hsl(46, 100%, 50%);
-    --accent-color-contrast: hsl(46, 100%, 70%);
+    --accent-color: hsl(223, 25%, 10%);
+    --accent-color-contrast: hsl(223, 12%, 42%);
 
-    --background-color: hsl(0, 0%, 13%);
-    --background-color-contrast: hsl(0, 0%, 18%);
-    --background-color-contrast-more: hsl(0, 0%, 25%);
-    --background-color-graph: hsl(0, 0%, 15%);
+    --background-color: hsl(29, 73%, 93%);
+    --background-color-contrast: hsl(0, 0%, 90%);
+    --background-color-contrast-more: hsl(223, 12%, 58%);
+    --background-color-graph: hsl(29, 100%, 96%);
     
-    --background-color-inputs: hsl(0, 0%, 20%);
+    --background-color-inputs: hsl(29, 100%, 97%);
     
-    --font-color-primary: hsl(0, 0%, 95%);
-    --font-color-secondary: hsl(0, 0%, 80%);
-    --font-color-inputs: hsl(0, 0%, 95%);
+    --font-color-primary: hsl(223, 25%, 10%);
+    --font-color-secondary: hsl(29, 100%, 100%);
+    --font-color-inputs: hsl(0, 0%, 0%);
     
     --font-primary: 'Open Sans', sans-serif;
     --font-secondary: monospace;
     
-    --scrollbar-color: 40,40,40;
-    --scrollbar-accent: 80,80,80;
+    --scrollbar-color: 255,255,255;
+    --scrollbar-accent: 0,0,0;
         
-    --header-color: hsl(0, 0%, 13%);
-    --header-links-color: hsl(180, 100%, 50%);
-    --header-menu-icon-color: hsl(0, 0%, 95%);
+    --header-color: hsl(223, 25%, 10%);
+    --header-links-color: hsl(0, 0%, 0%);
+    --header-menu-icon-color: hsl(0, 0%, 0%);
     
-    --logo-filter: brightness(0.9) contrast(1.1);
-    --svg-filter: invert(1);
+    --logo-filter: none;
+    --svg-filter: invert(0);
 }
