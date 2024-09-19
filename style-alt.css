@@ -118,7 +118,7 @@ svg line {
 }
 
 g.lineLabel rect {
-    fill: #06024b;
+    fill: #000000;
     filter: blur(2px);
     opacity: 0.9;
 }
