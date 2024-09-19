@@ -3,7 +3,7 @@
     --accent-color: hsla(220, 100%, 66%, 0.564);
     --accent-color-contrast: hsl(210, 100%, 80%);
 
-    --background-color: hsl(220, 15%, 15%);
+    --background-color: hsl(0, 0%, 0%);
     --background-color-contrast: hsl(220, 15%, 20%);
     --background-color-contrast-more: hsl(220, 15%, 25%);
     --background-color-graph: hsl(220, 15%, 18%);
@@ -32,7 +32,7 @@ body.dark-mode {
     --accent-color: hsl(220, 100%, 66%, 0.564);
     --accent-color-contrast: hsl(210, 100%, 80%);
 
-    --background-color: hsl(220, 15%, 15%);
+    --background-color: hsl(0, 0%, 0%);
     --background-color-contrast: hsl(220, 15%, 20%);
     --background-color-contrast-more: hsl(220, 15%, 25%);
     --background-color-graph: hsl(220, 15%, 18%);
